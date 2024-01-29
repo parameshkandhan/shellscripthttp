@@ -1,0 +1,9 @@
+#!/bin/bash # shback
+sudo su # switch to root user 
+yum update -y # it will update a new version
+yum install httpd -y # it will taken a service to install a package 
+service httpd start # the package of service it will we be start
+service httpd enable # the package of service it will be enable
+echo "<html><body><h1>Welcome to paramesh tech!</h1></body><html>" > /var/www/html/index.html # The index file it will be contain a html file
+sudo chmod 777 [index.html] # it will be give a permission of read, write and execute
+./[index.html]
